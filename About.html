@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"/>
+  <link href="Home.html">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: rgb(0, 0, 33);
+      color: white;
+      font-family: "poppins", sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 70px;
+      background-color: rgb(18, 18, 32);
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
+    nav ul li a{
+      text-decoration: none;
+     color: white;
+    }
+    nav ul li a:hover{
+      color: rgb(153, 153, 226);
+      font-size: 1.4rem;
+    }
+
+    .home{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content {
+max-width: 600px;
+}
+
+.home-content h1{
+     font-size: 56px;
+     font-weight: 700;
+     line-height: 1.2;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+}
+
+.home-content p {
+     font-size: 16px ;
+     margin: 20px 0 40px;
+
+}
+
+.home-content  .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height:50 px;
+}
+.purple{
+         color: #00abf0;
+      }
+  #element{
+        color: white;
+        font-style: italic;
+        font-size: 27px;
+      }
+
+
+      footer {
+  background-color: #0e0e1a;
+  height: 233px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-first h3 {
+  color: white;
+}
+
+.footer-second,
+.footer-third,
+.footer-fourth {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-second ul,
+.footer-third ul,
+.footer-fourth ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-second ul li,
+.footer-third ul li,
+.footer-fourth ul li {
+  margin: 5px;
+}
+
+.footer-second ul li a,
+.footer-third ul li a,
+.footer-fourth ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-second ul li a:hover,
+.footer-third ul li a:hover,
+.footer-fourth ul li a:hover {
+  color: rgb(153, 153, 226);
+}
+</style>
+
+  <header>
+      <nav>
+        <div class="left">Aryan's Portfolio</div>  
+        <div class="right"></div>
+        <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Skills.html">Skills</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="Contact.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="home">
+      <div class="home-content">
+          <h1>Hi, I'm Aryan Tripathi</h1>
+          <h3><span class ="purple">Student Of Computer Science & Engineering</span></h3>
+         <Bold> <h3>At Jaypee University Of Engineering & Technology</h3></Bold>
+          <p> <div></div></p>
+              <span id="element"></span>
+    </div>
+    </section>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+         strings: ['Born and raised in India, I am a Third Year student. I am interested in Web Development and Ethical Hacking. I consider my self a responsible and orderly person. I am looking forward for my first work experience. Committed to utilizing my skills to  further the mission of a company. '],
+          typeSpeed: 50,
+        });
+      </script>
+
+  <footer>
+    <div class="footer-first">
+      <h3>Aryan's Developer Portfolio</h3>
+    </div>
+    <div class="footer-second">
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Skills.html">Skills</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-rights">
+        Copyright &#169; Aryanportfolio | All rights reserved
+    </div>
+
+  </footer>
+
+</body>
+</html>

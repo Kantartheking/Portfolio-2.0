@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aryan - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"/>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: "poppins", sans-serif;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 70px;
+        background-color: rgb(18, 18, 32);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a{
+        text-decoration: none;
+       color: white;
+      }
+      nav ul li a:hover{
+        color: rgb(153, 153, 226);
+        font-size: 1.4rem;
+      }
+
+      main hr{
+        border: 0;
+        background: #9c97f1;
+        height: 1.2px;
+        margin: 40px 84px;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+
+      .firstsection{
+        display: flex;
+        justify-content: space-around;
+        margin: 80 px 0;
+        align-items: center;
+      }
+
+      .firstsection > div{
+        width:30%;
+      }
+
+      .leftsection{
+        font-size: 3rem;       
+      }
+      .leftsection .buttons{
+        padding: 50px 0;
+      }
+      .leftsection .btn{
+        padding: 12px;       
+        background-color: #1e2167;
+        color: white;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer ;
+      }
+      
+      .rightsection{
+        display: flex;
+        justify-content: center;
+      }
+      .rightsection img {
+        width: 80%;
+        max-width: 100%;
+              }
+      .purple{
+         color: rgb(170, 101, 234);
+      }
+      .text-gray{
+        color: gray;
+      }
+      #element{
+        color: rgb(170, 101, 234);
+      }
+      .secondsection{
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      .secondsection h1{
+        font-size: 1.9rem;
+      }
+      .secondsection .box {
+        background: white;
+        display: flex;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;   
+      }
+
+      .secondsection .vertical{
+        height: 93px;
+        width: 1px;
+         background-color: white;
+         margin: 0 100px;
+      }
+      .secondsection h3{
+    font-size: 30px;
+    line-height: 1.5;
+    font-family: Manrope;
+    font-weight: 500;
+      }
+
+      .thirdsection{
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      .thirdsection h1{
+        font-size: 1.9rem;
+      }
+      .thirdsection .box {
+        background: white;
+        display: flex;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;   
+      }
+
+      .thirdsection .vertical{
+        height: 93px;
+        width: 1px;
+         background-color: white;
+         margin: 0 100px;
+      }
+
+      footer {
+  background-color: #0e0e1a;
+  height: 233px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-first h3 {
+  color: white;
+}
+
+.footer-second,
+.footer-third,
+.footer-fourth {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-second ul,
+.footer-third ul,
+.footer-fourth ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-second ul li,
+.footer-third ul li,
+.footer-fourth ul li {
+  margin: 5px;
+}
+
+.footer-second ul li a,
+.footer-third ul li a,
+.footer-fourth ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-second ul li a:hover,
+.footer-third ul li a:hover,
+.footer-fourth ul li a:hover {
+  color: rgb(153, 153, 226);
+}
+
+.home{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content {
+max-width: 600px;
+}
+
+.home-content h1{
+     font-size: 56px;
+     font-weight: 700;
+     line-height: 1.2;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+}
+
+.home-content p {
+     font-size: 16px ;
+     margin: 20px 0 40px;
+
+}
+
+.home-content  .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height:50 px;
+}
+.purple2{
+         color: #00abf0;
+      }
+  #element2{
+        color: white;
+        font-style: italic;
+        font-size: 27px;
+      }
+    
+
+    </style>
+  </head>
+  <body>
+    
+    <header>
+      <nav>
+        <div class="left">Aryan's Portfolio</div>  
+        <div class="right"></div>
+        <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Skills.html">Skills</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="Contact.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+             Hi, My name is <span class ="purple">Aryan</span>
+            <div>and I am a passionate</div>
+            <span id="element"></span>
+           
+            <button class="btn" onclick="downloadResume()">Download Resume</button>
+<script>
+  function downloadResume() {
+    var fileUrl = "https://drive.google.com/file/d/1RpKKfG66uqlBghs3R9S0KPdrQuWGSs4O/view?usp=sharing";
+    window.location.href = fileUrl;
+  }
+</script>
+
+<button class="btn" onclick="HireMe()">Hire Me</button>
+
+<script>
+    function HireMe() {
+      var fileUrl = "https://www.linkedin.com/in/aryan-tripathi-8a421a221/";
+      window.location.href = fileUrl;
+    }
+  </script>
+
+        <div class="rightsection">
+        <img src="bg.png.png" alt="">
+        </div>
+    </section>
+
+    <hr>
+    <section class="thirdsection">
+      <h1>About Me</h1> 
+      <section class="home">
+        <div class="home-content">
+            <h1>Hi, I'm Aryan Tripathi</h1>
+            <h3><span class ="purple2">Student Of Computer Science & Engineering</span></h3>
+           <Bold> <h3>At Jaypee University Of Engineering & Technology</h3></Bold>
+            <p> <div></div></p>
+                <span id="element2"></span>
+      </div>
+      </section>
+      <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+      <script>
+          var typed = new Typed('#element2', {
+           strings: ['Born and raised in India, I am a Third Year student. I am interested in Web Development and Ethical Hacking. I consider my self a responsible and orderly person. I am looking forward for my first work experience. Committed to utilizing my skills to  further the mission of a company. '],
+            typeSpeed: 50,
+          });
+        </script>
+
+    </section>
+
+
+    <hr>
+    <section class="secondsection">
+        <span class="text-gray">What I have done so far</span>
+        <h1>Work Experience - Fresher</h1> 
+        <h3>
+        <strong>Updating Soon</strong>
+        </h3>
+    </section>
+
+    </main>
+    <footer>
+        <div class="footer-first">
+          <h3>Aryan's Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li><a href="./Home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Skills.html">Skills</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; Aryanportfolio | All rights reserved
+        </div>
+
+      </footer>
+      
+        
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'Web Designer'],
+          typeSpeed: 50,
+        });
+      </script>
+
+  </body>
+</html>
